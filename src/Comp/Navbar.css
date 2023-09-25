@@ -149,12 +149,9 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     background-image: url('../images/backgroundnav.png');
-    /* background-image: url('../images/jessicapng.png'); */
-    /* z-index: 100; */
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
-    /* height: 100%; */
 }
 
 .navad img{
@@ -165,7 +162,6 @@ justify-content: space-between;
 }
 .navad h1{
     font-weight: 800;
-    /* font-stretch: extra-expanded; */
     font-family: 'Syne';
     padding-left: 50px;
 }
@@ -197,7 +193,6 @@ margin-top: 300px;
 }
 
 .navfooter{
-/* margin: 3vw 0; */
 align-self: baseline;
     display: inline-flex;
     color: white;
@@ -214,25 +209,16 @@ align-self: baseline;
     padding: 0;
 }
 
-.testing{
-    background-image:url('../images/jessicapng.png');
-}
-@media (max-width:1500px) {
-    /* .navorangeback{
-        top: 28vh;
-    } */
-}
-
-@media (max-width:1100px) {
-    .navadwithhead{
-        /* margin-top: 20vh; */
+@media (min-height:800px) {
+    .navmain{
+        height: 80vh;
     }
 }
 
 @media (max-width:800px) {
     .navorangeback{
         width: 100%;
-        /* top: 30vh; */
+        height: 40vw;
     }
     .navadwithhead{
         margin-top: 20vh;
@@ -241,7 +227,7 @@ align-self: baseline;
     .navad h1{
         padding-left: 0;
         line-height: 5vh;
-        font-size: 15vw;
+        font-size: 12vw;
       
     }
     .hamburgersign{
@@ -258,21 +244,10 @@ align-self: baseline;
         margin-left: 6vw;
     }
     .navfooter{
-        margin-top: -3vw;
-        /* margin-bottom:15vh ; */
-        /* align-self: baseline; */
-        /* align-items: flex-end; */
-    }
-    .navorangeback{
-        height: 40vw;
+        margin-top: 2vw;
     }
 }
 
-@media (max-width:550px) {
-    .navfooter{
-        margin-top: 10vh;
-    }
-}
     @media (max-width:500px) {
         .navad{
             height: 550px;
@@ -298,16 +273,17 @@ align-self: baseline;
             padding: 2px;
         }
         .navorangeback{
-            height: 250px;
+            height: 200px;
+            top: 7vh;
         }
         .navfooter{
-            margin-top: -15vh;
+            margin-top: -5vh;   
         }
     }
 
 @media (max-width:300px) {
     .navmain{
-        height: 80vh;
+        height: 90vh;
     }
     .navadwithhead{
         margin-top: 30vh;
@@ -322,9 +298,15 @@ align-self: baseline;
         height: 100vh;
     }
     .navorangeback{
-        height: 170px;
+        top: 4vh;
     }
     .navfooter{
-            margin-top: -42vh;
+            margin-top: 1vh;
+        }
+        .navfooter h1{
+            font-size: 14px;
+        }
+        .navad{
+            height: 70vh;
         }
 }

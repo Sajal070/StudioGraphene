@@ -112,9 +112,6 @@ function Navbar() {
                     </h1>
                 </div>
             </div>
-            <div className='testing'>
-
-            </div>
         </div>
     )
 }
